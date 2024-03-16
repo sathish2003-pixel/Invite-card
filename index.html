@@ -1,348 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<style>
-  body{
-    background:linear-gradient(rgba(111, 40, 224, 0.46), rgba(39, 43, 47, 0.8)),url(./images/3748275_75291.jpg);
- 
-    background-repeat:no-repeat; 
-    background-size:cover; */
-    
-    
-  }
-  @media only screen and (max-width: 904px) {
-    body{
-      
-    background:linear-gradient(rgba(111, 40, 224, 0.46), rgba(39, 43, 47, 0.8)),url(./images/3748275_75291.jpg);
-     background-size:1200px 2500px;  
-     background-repeat:repeat-x;
-     color: wheat; 
-     border:21px rgba(187, 255, 0, 0.705);
-     border-style:double;
+  <style>
+    body {
+      background: linear-gradient(rgba(111, 40, 224, 0.46), rgba(39, 43, 47, 0.8)), url(./images/3748275_75291.jpg);
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      */
     }
-  }
-  .card {
-    backdrop-filter: blur(3px) saturate(180%);
-    -webkit-backdrop-filter: blur(3px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.75);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-  box-shadow: 2px 2px 15px rgb(193, 193, 193);
 
-    
-}
+    @media only screen and (max-width: 904px) {
+      body {
 
+        background: linear-gradient(rgba(76, 31, 143, 0.401), rgba(39, 43, 47, 0.8)), url(./images/3748275_75291.jpg);
+        background-size: 1200px 2500px;
+        background-repeat: repeat-x;
+        color: white;
+        font-weight: 800;
+        border: 8px double yellow;
 
-              button {
- position: relative;
- display: inline-block;
- cursor: pointer;
- outline: none;
- border: 0;
- vertical-align: middle;
- text-decoration: none;
- background: transparent;
- padding: 0;
- font-size: inherit;
- font-family: inherit;
-}
-
-button.learn-more {
- width: 12rem;
- height: auto;
-}
-
-button.learn-more .circle {
- transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
- position: relative;
- display: block;
- margin: 0;
- width: 3rem;
- height: 3rem;
- background: #f0cf13;
- border-radius: 1.625rem;
-}
-
-button.learn-more .circle .icon {
- transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
- position: absolute;
- top: 0;
- bottom: 0;
- margin: auto;
- background: #150f0f;
-}
-
-button.learn-more .circle .icon.arrow {
- transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
- left: 0.625rem;
- width: 1.125rem;
- height: 0.125rem;
- background: none;
-}
-
-button.learn-more .circle .icon.arrow::before {
- position: absolute;
- content: "";
- top: -0.29rem;
- right: 0.0625rem;
- width: 0.625rem;
- height: 0.625rem;
- border-top: 0.125rem solid #fff;
- border-right: 0.125rem solid #fff;
- transform: rotate(45deg);
-}
-
-button.learn-more .button-text {
- transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
- position: absolute;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- padding: 0.38rem 0;
- margin: 0 0 0 1.85rem;
- color: #de8787;
- font-size: 25px;
- font-weight: 700;
- line-height: 1.6;
- text-align: center;
- text-transform: uppercase;
-}
-
-button:hover .circle {
- width: 100%;
-}
-
-button:hover .circle .icon.arrow {
- background: #fff;
- transform: translate(1rem, 0);
-}
-
-button:hover .button-text {
- color: #fff;
-}
-video {
-  object-fit: cover;
-  position: absolute;
-  width: 400px;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-}    
-
-
-
-
-.invite{
-        font-size: 25px;
-        color: rgb(255, 255, 255);
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-        font-weight: 900;
-       line-height:1.0cm;
       }
-      .btn-group {
-  all: unset;
- 
-  padding: 6px 10px;
-  border-radius:10px;
-  background: linear-gradient(to right,#ffd277,#fdc960,#ffd277,#ffd277,#ffd277,#ffd277);
-  box-shadow: inset -8px 0 8px rgba(249, 249, 249, 0.782),
-                inset 0 -8px 8px rgba(0, 0, 0, 0.25),
-                0 0 0 2px rgba(192, 188, 188, 0.75),
-                10px 20px 25px rgba(0, 0, 0, 0.4);
+    }
 
-  cursor: pointer;
-}
+    .card {
+      backdrop-filter: blur(3px) saturate(180%);
+      -webkit-backdrop-filter: blur(3px) saturate(180%);
+      background-color: rgba(17, 25, 40, 0.75);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      box-shadow: 2px 2px 15px rgb(193, 193, 193);
 
 
-  
-.date{
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-  font-family:'Times New Roman', Times, serif;
-  font-weight: 520;
-}
-@font-face {
-    font-family: "My Custom Font";
-    src: url("path/my-custom-font.woff") format("woff"),
+    }
+
+
+    button {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      outline: none;
+      border: 0;
+      vertical-align: middle;
+      text-decoration: none;
+      background: transparent;
+      padding: 0;
+      font-size: inherit;
+      font-family: inherit;
+    }
+
+    button.learn-more {
+      width: 12rem;
+      height: auto;
+    }
+
+    button.learn-more .circle {
+      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 3rem;
+      height: 3rem;
+      background: #f0cf13;
+      border-radius: 1.625rem;
+    }
+
+    button.learn-more .circle .icon {
+      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background: #150f0f;
+    }
+
+    button.learn-more .circle .icon.arrow {
+      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+      left: 0.625rem;
+      width: 1.125rem;
+      height: 0.125rem;
+      background: none;
+    }
+
+    button.learn-more .circle .icon.arrow::before {
+      position: absolute;
+      content: "";
+      top: -0.29rem;
+      right: 0.0625rem;
+      width: 0.625rem;
+      height: 0.625rem;
+      border-top: 0.125rem solid #fff;
+      border-right: 0.125rem solid #fff;
+      transform: rotate(45deg);
+    }
+
+    button.learn-more .button-text {
+      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.38rem 0;
+      margin: 0 0 0 1.85rem;
+      color: #de8787;
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 1.6;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    button:hover .circle {
+      width: 100%;
+    }
+
+    button:hover .circle .icon.arrow {
+      background: #fff;
+      transform: translate(1rem, 0);
+    }
+
+    button:hover .button-text {
+      color: #fff;
+    }
+
+    video {
+      object-fit: cover;
+      position: absolute;
+      width: 400px;
+      height: 100%;
+      position: absolute;
+      z-index: 1;
+    }
+
+
+
+
+    .invite {
+      font-size: 25px;
+      color: rgb(255, 255, 255);
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-weight: 900;
+      line-height: 1.0cm;
+    }
+
+    .btn-group {
+      all: unset;
+
+      padding: 6px 10px;
+      border-radius: 10px;
+      background: linear-gradient(to right, #ffd277, #fdc960, #ffd277, #ffd277, #ffd277, #ffd277);
+      box-shadow: inset -8px 0 8px rgba(249, 249, 249, 0.782),
+        inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+        0 0 0 2px rgba(192, 188, 188, 0.75),
+        10px 20px 25px rgba(0, 0, 0, 0.4);
+
+      cursor: pointer;
+    }
+
+
+
+    .date {
+      font-size: 20px;
+      color: rgb(0, 0, 0);
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 520;
+    }
+
+    @font-face {
+      font-family: "My Custom Font";
+      src: url("path/my-custom-font.woff") format("woff"),
         url("path/my-custom-font.woff") format("woff");
-}
-.list-group-item{
- border: none;
- background-color: transparent;
-  color: yellow;
-  font-size: 20px;
-}
+    }
 
-      
-</style>
+    .list-group-item {
+      border: none;
+      background-color: transparent;
+      color: yellow;
+      font-size: 20px;
+    }
+  </style>
 </head>
+
 <body>
-  
-  
-      <div class="container" data-aos="fade-down"  data-aos-duration="800" data-aos-easing="linear">
-        <div class="row">
-          <div class="col-sm-12 col-lg-12 col-12">
-            <div class="text-center pt-3" >
-              <img src="./images/balaji.png" class="img-fluid" alt="..." width="80px" height="80px">
-              
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12 col-lg-12 col-12">
-              <div class="text-center">
-               <b style="padding-left: 30px;text-transform: capitalize;">||shree venkateswara swamy||</b>
-              </div>
-            </div>
+
+
+  <div class="container" data-aos="fade-down" data-aos-duration="800" data-aos-easing="linear">
+    <div class="row">
+      <div class="col-sm-12 col-lg-12 col-12">
+        <div class="text-center pt-3">
+          <img src="./images/balaji.png" class="img-fluid" alt="..." width="80px" height="80px">
+
         </div>
       </div>
-</div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-lg-12 col-12" data-aos="fade-right" data-aos-duration="800" data-aos-easing="linear">
-            <div class="text-center">
-              <style>
-                  @media only screen and (max-width: 377px) {
-                    #title-card{
-                      padding-right: 30px;
-                    }
-                  }
-              </style>
-            <img src="./images/title2.png"style="width:330px;" id="title-card">
-            </div>
+      <div class="row">
+        <div class="col-sm-12 col-lg-12 col-12">
+          <div class="text-center">
+            <b style="padding-left: 30px;text-transform: capitalize;">||shree venkateswara swamy||</b>
           </div>
+        </div>
       </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-lg-12 col-12" data-aos="fade-right" data-aos-duration="800" data-aos-easing="linear">
+        <div class="text-center">
+          <style>
+            @media only screen and (max-width: 377px) {
+              #title-card {
+                padding-right: 30px;
+              }
+            }
+          </style>
+          <img src="./images/title2.png" style="width:340px;" id="title-card">
+        </div>
+      </div>
+    </div>
     <div class="row">
 
 
-      <div class="col-sm-4 col-lg-12">
+      <div class="col-sm-12 col-lg-12">
         <div class="text-center pt-4">
-          <img src="./images/ab family.png" class="img-fluid pb-4" style="padding-left: 25px;width: 200px;" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear">
-         <h5 class="invite pb-4">Cordially invite you & your family to grace the occasion of House warming ceremony of Our New Home
-          Please join us at our new abode, where memories will be made and laughter shared.
-         </h5>
+          <img src="./images/ab family.png" class="img-fluid pb-4" style="padding-left: 25px;width: 200px;"
+            data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear">
+          <h5 class="invite pb-4">Cordially invite you & your family to grace the occasion of House warming ceremony of
+            Our New Home
+            Please join us at our new abode, where memories will be made and laughter shared.
+          </h5>
         </div>
-        </div>
-        
-
-
-
-
-
       </div>
-    </div>
-  
 
- 
-      </div>   
-      
-      <!-- -->
-<!-- 
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+  </div>
+
+  <!-- -->
+  <!-- 
 Container ends -->
 
 
-<div class="container-fluid">
-  <div class="row" data-aos="fade-up"
-  data-aos-duration="2000">
-    <div class="col-sm-12 text-center">
+  <div class="container-fluid">
+    <div class="row" data-aos="fade-up" data-aos-duration="2000">
+      <div class="col-sm-12 text-center">
         <hr>
-            <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">Save the date</h1>
-            <h1>24<sup>th</sup>.March.2024</h1>
-            <h1 style="letter-spacing: 0.0cm;">Thursday||5:30 AM</h1>
-            <h1 class="">Lunch Follows At</h1>
-          
-    </div>
-  </div>
-  <div class="row pb-5">
-    <div class="col-sm-12">
-      <img src="./images/remove kalsham.png" class="img-fluid">
+        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">Save the date</h1>
+        <h1>24<sup>th</sup>.March.2024</h1>
+        <h1 style="letter-spacing: 0.0cm;">Thursday||5:30 AM</h1>
+        <h1 class="">Lunch Follows At</h1>
 
+      </div>
     </div>
-    <div class="col-sm-12">
-      <div class="card mb-3" style="max-width: 540px;" data-aos="zoom-in" data-aos-duration="1500">
-        <div class="row g-0">
-          
-          <div class="col-md-8 col-sm-12">
-            <div class="card-body">
-              <h2 class="card-title text-light">Warm Regard's</h2>
-            
-      <ul class="list-group">
-        <li class="list-group-item" data-aos="fade-right" data-aos-duration="1500">A.B.RAVI (S.E.O) Sericulture Department</li>
-        <li class="list-group-item" data-aos="fade-right" data-aos-duration="1500">M.P.ROOPA SHREE</li>
-        <li class="list-group-item" data-aos="fade-right" data-aos-duration="1500">A.R.PRAJWAL (Corporate trainer for IT professional)
-        </li>
-        <li class="list-group-item" data-aos="fade-right" data-aos-duration="1500"> A.R.DEEKSHITHA (IT)</li>
-      </ul>
-    
+    <div class="row pb-5">
+      <div class="col-sm-12">
+        <img src="./images/remove kalsham.png" class="img-fluid">
+
+      </div>
+      <div class="col-sm-12">
+        <div class="card mb-3" style="max-width: 540px;" data-aos="zoom-in" data-aos-duration="1500">
+          <div class="row g-0">
+
+            <div class="col-md-8 col-sm-12">
+              <div class="card-body">
+                <h2 class="card-title text-light">Warm Regard's</h2>
+
+                <ul class="list-group">
+                  <li class="list-group-item" data-aos="fade-right" data-aos-duration="1500">A.B.RAVI (S.E.O)
+                    Sericulture Department</li>
+                  <li class="list-group-item" data-aos="fade-right" data-aos-duration="1500">M.P.ROOPA SHREE</li>
+                  <li class="list-group-item" data-aos="fade-right" data-aos-duration="1500">A.R.PRAJWAL (Corporate
+                    trainer for IT professional)
+                  </li>
+                  <li class="list-group-item" data-aos="fade-right" data-aos-duration="1500"> A.R.DEEKSHITHA (IT)</li>
+                </ul>
+
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
 
-<!--container ends-->
+        <!--container ends-->
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-12 text-center">
-      <p>
-        <button class="learn-more" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-          <span class="circle" aria-hidden="true">
-          <span class="icon arrow"></span>
-          </span>
-          <span class="button-text">Venue</span>
-        </button>
-      </p>
-      <div style="min-height: 120px;" class="mx-3 text-center">
-        <div class="collapse collapse-horizontal text-center" id="collapseWidthExample">
-          <div class="card card-body mb-5 text-center" style="width: 265px;">
-           <h2 style="line-height:1cm;">1394A,Shankar Pura.
-            Mandya,Karnataka-57140</h2 style="line-height:1cm;">
-            <h4><a href="tel:9900948662" style="text-decoration: solid;">9900948662</a>
-              <a href="tel:8867272726" style="text-decoration: solid;">8867272726</a></h4>
-​
-           <a href="https://maps.app.goo.gl/EzfPcKyAGYhf8My36">
-            <img src="./images/Map.png" class="mx-auto d-block pt-3" width="150px"  style="cursor: pointer;">
-            </a>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <p>
+                <button class="learn-more" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                  <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                  </span>
+                  <span class="button-text">Venue</span>
+                </button>
+              </p>
+              <div style="min-height: 120px;" class="mx-3 text-center">
+                <div class="collapse collapse-horizontal text-center" id="collapseWidthExample">
+                  <div class="card card-body mb-5 text-center" style="width: 265px;">
+                    <h2 style="line-height:1cm;">1394A,Shankar Pura.
+                      Mandya,Karnataka-57140</h2 style="line-height:1cm;">
+                    <h4><a href="tel:9900948662" style="text-decoration: solid;">9900948662</a>
+                      <a href="tel:8867272726" style="text-decoration: solid;">8867272726</a>
+                    </h4>
+                    ​
+                    <a href="https://maps.app.goo.gl/EzfPcKyAGYhf8My36">
+                      <img src="./images/Map.png" class="mx-auto d-block pt-3" width="150px" style="cursor: pointer;">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
     </div>
   </div>
-</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-  </div>
-</div>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
